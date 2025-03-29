@@ -1,0 +1,30 @@
+{
+    "packages": [
+        {
+            "name": "Zoraxy Offical Plugin Package",
+            "maintainer": "Zoraxy Offical",
+            "email": "admin@aroz.org",
+            "websiteURL": "zoraxy.aroz.org",
+            "platforms": [
+                {
+                    "name": "Linux AMD64",
+                    "platform": "linux",
+                    "architecture": "amd64",
+                    "plugins": [
+                        {
+                            "uuid": "",
+                            "name": "",
+                            "description": "",
+                            "version": "",
+                            "url": "",
+                            "archiveFileName": "",
+                            "checksum": "",
+                            "size": "",
+                            "category": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

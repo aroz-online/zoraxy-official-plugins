@@ -11,7 +11,19 @@ Since Zoraxy v3.2.0, we introduced a new plugin system and moved some of the fea
 
 ## Installation
 
-Here are the steps to install plugin to Zoraxy
+### Plugin Manager (Work In Progress)
+
+Copy the following link to Zoraxy plugin manager URL
+
+```
+(work in progress)
+```
+
+
+
+### Manual Installation
+
+Here are the steps to install plugin to Zoraxy manually
 
 1. Locate the plugin folder (The plugin folder is usually located at the same directory as your Zoraxy executable)
 2. Create a folder with the name of your plugin executable. For example, if you have a plugin executable named `ztnc.exe` (Windows) or `ztnc` (Linux), create a folder named "ztnc" under the plugin folder so you now have `./plugins/ztnc/ztnc(.exe)`
