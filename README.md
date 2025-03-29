@@ -1,5 +1,7 @@
 # Zoraxy Official Plugins
-The offical plugin list for Zoraxy
+The official plugin list for Zoraxy
+
+**Warning! This repo is still in very early stage of development and things might not work as expected. Please use this with your own risk.**
 
 
 
@@ -16,7 +18,7 @@ Since Zoraxy v3.2.0, we introduced a new plugin system and moved some of the fea
 Copy the following link to Zoraxy plugin manager URL
 
 ```
-(work in progress)
+
 ```
 
 
@@ -45,18 +47,16 @@ To build just one plugin, go into the respective plugin directory and run go bui
 
 ```bash
 cd plugins/ztnc/
-go mod tidy
-go build
+make
 
-# and you should see ztnc.exe or ztnc (depends on the platform you are using)
+# and you should see all the different release under a newly created ./build folder
 ```
 
 #### Build All Plugins
 
-You can build all the plugin with a simple makefile call
+You can build all the plugin with a simple `make`. All the built will be automatically moved to the `./dist/` folder with their respective plugin folder name. You only need to move the plugin folder with one of the binary that matches your Zoraxy release architecture. 
 
 ```bash
-cd plugins
 make
 ```
 
