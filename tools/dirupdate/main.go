@@ -27,8 +27,8 @@ type PluginDirInfo struct {
 }
 
 const (
-	DIR_INFO_INDEX_URL = "https://github.com/aroz-online/zoraxy-official-plugins/blob/main/directories/"
-	DIR_INFO_ICON_URL  = DIR_INFO_INDEX_URL + "icon/"
+	DIR_INFO_INDEX_URL = "https://raw.githubusercontent.com/aroz-online/zoraxy-official-plugins/main/"
+	DIR_INFO_ICON_URL  = DIR_INFO_INDEX_URL + "directories/icon/"
 )
 
 func main() {

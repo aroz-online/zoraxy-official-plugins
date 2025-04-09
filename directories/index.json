@@ -1,6 +1,6 @@
 [
  {
-  "IconPath": "https://github.com/aroz-online/zoraxy-official-plugins/blob/main/directories/icon/ztnc.png",
+  "IconPath": "https://raw.githubusercontent.com/aroz-online/zoraxy-official-plugins/main/directories/icon/ztnc.png",
   "PluginIntroSpect": {
    "id": "org.aroz.zoraxy.ztnc",
    "name": "ztnc",
