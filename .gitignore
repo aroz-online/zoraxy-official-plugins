@@ -30,3 +30,4 @@ go.work.sum
 *.db
 *.db.lock
 /dist
+/tools/dirupdate/zoraxy
