@@ -22,13 +22,18 @@ type Checksums struct {
 
 type PluginDirInfo struct {
 	IconPath         string
-	PluginIntroSpect plugin.IntroSpect
-	ChecksumsSHA256  Checksums
+	PluginIntroSpect plugin.IntroSpect //Plugin introspect information
+	ChecksumsSHA256  Checksums         //Checksums for the plugin binary
+	DownloadURLs     map[string]string //Download URLs for different platforms
 }
 
 const (
+	// The URL to download the directory information
 	DIR_INFO_INDEX_URL = "https://raw.githubusercontent.com/aroz-online/zoraxy-official-plugins/main/"
 	DIR_INFO_ICON_URL  = DIR_INFO_INDEX_URL + "directories/icon/"
+
+	// The URL to download the latest version of the plugin
+	DOWNLOAD_MAIN_URL = "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/"
 )
 
 func main() {
@@ -70,6 +75,7 @@ func main() {
 			thisPluginDirInfo := &PluginDirInfo{
 				ChecksumsSHA256:  Checksums{},
 				PluginIntroSpect: plugin.IntroSpect{},
+				DownloadURLs:     make(map[string]string),
 			}
 
 			//Check if the current platform exists in the dist folder.
@@ -95,6 +101,13 @@ func main() {
 				continue
 			}
 			thisPluginDirInfo.ChecksumsSHA256 = thisChecksumList
+
+			downloadURLs, err := generateDownloadURLs(distPath)
+			if err != nil {
+				fmt.Println("Error generating download URLs:", err)
+				continue
+			}
+			thisPluginDirInfo.DownloadURLs = downloadURLs
 
 			//Check if icon.png exists in this folder. If it does, copy it to ./directories/icon
 			iconPath := filepath.Join("./src", entry.Name(), "icon.png")

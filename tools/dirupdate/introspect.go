@@ -10,6 +10,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"runtime"
+	"strings"
 	"time"
 
 	plugin "zoraxy.aroz.org/tools/dirupdate/mod/zoraxy_plugin"
@@ -47,6 +48,34 @@ func getPluginSpec(entryPoint string) (*plugin.IntroSpect, error) {
 	}
 
 	return &pluginSpec, nil
+}
+
+// generateDownloadURLs generates the download URLs for the given folder path
+func generateDownloadURLs(folderpath string) (map[string]string, error) {
+	downloadURLs := make(map[string]string)
+	entries, err := os.ReadDir(folderpath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read directory: %v", err)
+	}
+
+	for _, entry := range entries {
+		if entry.IsDir() {
+			continue
+		}
+		//filePath := filepath.Join(folderpath, entry.Name())
+		fileURL := fmt.Sprintf(DOWNLOAD_MAIN_URL + entry.Name()) // Replace with actual URL generation logic
+		fmt.Println("Download URL for file", entry.Name(), ":", fileURL)
+		// Add the file URL to the map with the file name as the key
+		key := filepath.Base(entry.Name())
+		if runtime.GOOS == "windows" {
+			key = strings.TrimSuffix(key, ".exe")
+		}
+
+		//Also trim the plugin name from the file name
+		key = strings.TrimPrefix(key, filepath.Base(folderpath)+"_")
+		downloadURLs[key] = fileURL
+	}
+	return downloadURLs, nil
 }
 
 // GeneratePluginDirInfo generates the plugin directory info for the given folder name

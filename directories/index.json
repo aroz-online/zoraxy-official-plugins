@@ -28,6 +28,15 @@
    "linux_mipsle": "0fb862cac995be660c85c80b87f431f2b751941bdee91997d2c49ba7c9b18798",
    "linux_riscv64": "6868981a716ade7ba4b3518dd48c2bfcc675c109ad4e2582be2be68801adf8ff",
    "windows_amd64": "211769558445f2b7bed0a497cebe2aa148b3cc7e584737a1bf20cb73ed00bcb9"
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_386",
+   "linux_amd64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_amd64",
+   "linux_arm": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_arm",
+   "linux_arm64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_arm64",
+   "linux_mipsle": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_mipsle",
+   "linux_riscv64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_riscv64",
+   "windows_amd64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_windows_amd64.exe"
   }
  }
 ]
