@@ -9,6 +9,46 @@
    "description": "UI for ZeroTier Network Controller",
    "url": "https://zoraxy.aroz.org",
    "type": 1,
+   "version_major": 2,
+   "version_minor": 0,
+   "version_patch": 0,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/ui",
+   "subscription_path": "",
+   "subscriptions_events": null
+  },
+  "ChecksumsSHA256": {
+   "linux_amd64": "74cbc05d64caefa636c32a8a37be65834a171d2e6e880d90a091022c4cad0d17",
+   "linux_386": "6b9f1d12ac8ae214ee4060893869842abdca467e6ee7a2d0a51f95ecd3d668f5",
+   "linux_arm": "832f6008f337d2b660add5ac6d510daed29dbaf5715253ea98fe3551a3ab969a",
+   "linux_arm64": "ae39e3bb7b74cb87fba8a589eb748741cfffe108901c311d887d5988ca51eab3",
+   "linux_mipsle": "2385257da56109944ced735e977efebb8caac47fee8e1570ce0c36c12e93b10d",
+   "linux_riscv64": "29c1e04563077c2eebe9593856c39f9a105bcdb3db6987cc8686248521629134",
+   "windows_amd64": "c236bae90617059724ee4d7db638bbf57639956f06a9e4b60dd6ca69f6b60277"
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_386",
+   "linux_amd64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_amd64",
+   "linux_arm": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_arm",
+   "linux_arm64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_arm64",
+   "linux_mipsle": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_mipsle",
+   "linux_riscv64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_riscv64",
+   "windows_amd64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_windows_amd64.exe"
+  }
+ },
+ {
+  "IconPath": "https://raw.githubusercontent.com/aroz-online/zoraxy-official-plugins/main/directories/icon/ztnc-legacy.png",
+  "PluginIntroSpect": {
+   "id": "org.aroz.zoraxy.ztnclegacy",
+   "name": "ztnc (legacy)",
+   "author": "aroz.org",
+   "author_contact": "zoraxy.aroz.org",
+   "description": "UI for ZeroTier Network Controller",
+   "url": "https://zoraxy.aroz.org",
+   "type": 1,
    "version_major": 1,
    "version_minor": 0,
    "version_patch": 0,
@@ -21,22 +61,22 @@
    "subscriptions_events": null
   },
   "ChecksumsSHA256": {
-   "linux_amd64": "fc25ab8bc1c48e3e6dfe5dc61ae671176b04ece48b848e5ed739186f44a76ea1",
-   "linux_386": "1bdf9dfcdb9f06e998bbdaba656f32379415dca5f2c1a350adb4b2f6feaab813",
-   "linux_arm": "759e26430d46017e75d2f5e18c4e81cbe6e085538edf1c6a359e28461550c9ac",
-   "linux_arm64": "e68996a881b16918f429135e5941dfcf9d47c3fdb2370fa3f6a3108595f4e2fb",
-   "linux_mipsle": "0fb862cac995be660c85c80b87f431f2b751941bdee91997d2c49ba7c9b18798",
-   "linux_riscv64": "6868981a716ade7ba4b3518dd48c2bfcc675c109ad4e2582be2be68801adf8ff",
-   "windows_amd64": "211769558445f2b7bed0a497cebe2aa148b3cc7e584737a1bf20cb73ed00bcb9"
+   "linux_amd64": "d7c500f8da1be61fcd98d9ff71eb3a6b7de38f517921beddebccb0360bb46620",
+   "linux_386": "b71bb5615ccf53e2cfb52583c603c1a332eccfaf33e7be8a8c5832a1f22d75b0",
+   "linux_arm": "d348488424612cfa8e5aed605894391b1645446798fb15edbd2f2fc671a8b401",
+   "linux_arm64": "9e11555a031c909ab46e00dadc3f7f4172b158a8ce52bb78517022f628a20f3a",
+   "linux_mipsle": "5b5cffe5ebcc965e71498a4fab4915a028967f7c3a3d6faf3521bf9df6be27ce",
+   "linux_riscv64": "41a8705019268d545ee29deec4e4615ddc605b1dd5b902e1893ce00bf6dcd577",
+   "windows_amd64": "2a3c6c21a912f7d52c0405e5bdd178e2991c253e0b35ab3ab3e3beb2031b0be3"
   },
   "DownloadURLs": {
-   "linux_386": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_386",
-   "linux_amd64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_amd64",
-   "linux_arm": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_arm",
-   "linux_arm64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_arm64",
-   "linux_mipsle": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_mipsle",
-   "linux_riscv64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_riscv64",
-   "windows_amd64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_windows_amd64.exe"
+   "linux_386": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc-legacy_linux_386",
+   "linux_amd64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc-legacy_linux_amd64",
+   "linux_arm": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc-legacy_linux_arm",
+   "linux_arm64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc-legacy_linux_arm64",
+   "linux_mipsle": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc-legacy_linux_mipsle",
+   "linux_riscv64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc-legacy_linux_riscv64",
+   "windows_amd64": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc-legacy_windows_amd64.exe"
   }
  }
 ]

@@ -63,7 +63,7 @@ func generateDownloadURLs(folderpath string) (map[string]string, error) {
 			continue
 		}
 		//filePath := filepath.Join(folderpath, entry.Name())
-		fileURL := fmt.Sprintf(DOWNLOAD_MAIN_URL + entry.Name()) // Replace with actual URL generation logic
+		fileURL := DOWNLOAD_MAIN_URL + entry.Name() // Replace with actual URL generation logic
 		fmt.Println("Download URL for file", entry.Name(), ":", fileURL)
 		// Add the file URL to the map with the file name as the key
 		key := filepath.Base(entry.Name())

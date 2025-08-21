@@ -7,13 +7,13 @@ import (
 
 	"embed"
 
-	"aroz.org/zoraxy/ztnc/mod/database"
-	"aroz.org/zoraxy/ztnc/mod/ganserv"
-	plugin "aroz.org/zoraxy/ztnc/mod/zoraxy_plugin"
+	"aroz.org/zoraxy/ztnc_legacy/mod/database"
+	"aroz.org/zoraxy/ztnc_legacy/mod/ganserv"
+	plugin "aroz.org/zoraxy/ztnc_legacy/mod/zoraxy_plugin"
 )
 
 const (
-	PLUGIN_ID       = "org.aroz.zoraxy.ztnc"
+	PLUGIN_ID       = "org.aroz.zoraxy.ztnclegacy"
 	UI_RELPATH      = "/ui"
 	EMBED_FS_ROOT   = "/web"
 	DB_FILE_PATH    = "ztnc.db"
@@ -32,13 +32,13 @@ func main() {
 	// Serve the plugin intro spect
 	runtimeCfg, err := plugin.ServeAndRecvSpec(&plugin.IntroSpect{
 		ID:            PLUGIN_ID,
-		Name:          "ztnc",
+		Name:          "ztnc (legacy)",
 		Author:        "aroz.org",
 		AuthorContact: "zoraxy.aroz.org",
 		Description:   "UI for ZeroTier Network Controller",
 		URL:           "https://zoraxy.aroz.org",
 		Type:          plugin.PluginType_Utilities,
-		VersionMajor:  2,
+		VersionMajor:  1,
 		VersionMinor:  0,
 		VersionPatch:  0,
 
