@@ -1,5 +1,4 @@
-.PHONY: all build clean dirupdate dirupdate-noclone
-
+.PHONY: all build clean dirupdate dirupdate-noclone noclone
 # Build all platforms and architectures
 # The build process is done in the plugin source folder of src/*/.
 # Each plugin source folder should contain its own makefile that handles the specific build process for that plugin
@@ -10,6 +9,14 @@ all:
 	@echo "Building all plugins..."
 	$(MAKE) build
 	$(MAKE) dirupdate
+	@echo "All plugins built successfully."
+
+noclone: 
+	@echo "Cleaning up previous builds..."
+	$(MAKE) clean
+	@echo "Building all plugins..."
+	$(MAKE) build
+	$(MAKE) dirupdate-noclone
 	@echo "All plugins built successfully."
 	
 build:

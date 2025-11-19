@@ -1,0 +1,3 @@
+[submodule "src/zoraxyfail2ban"]
+	path = src/zoraxyfail2ban
+	url = https://github.com/kris701/zoraxyfail2ban

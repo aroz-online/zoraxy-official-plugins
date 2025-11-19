@@ -1,5 +1,15 @@
 #!/bin/bash
 
+
+# The script clones the zoraxy repo (unless -noclone is specified), copies the
+# latest zoraxy_plugin to ./mod, cleans up, runs 'go mod tidy', builds the
+# dirupdate executable, and executes it to regenerate the directories info.
+#
+# Usage: ./update.sh [-noclone]
+#   -noclone: Skip cloning the zoraxy repo and plugin copying (useful for faster
+#             runs if the plugin is already up-to-date locally)
+
+
 # Define the repository URL and target directory
 REPO_URL="https://github.com/tobychui/zoraxy"
 TARGET_DIR="./zoraxy"

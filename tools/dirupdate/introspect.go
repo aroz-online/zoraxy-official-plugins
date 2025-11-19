@@ -58,12 +58,23 @@ func generateDownloadURLs(folderpath string) (map[string]string, error) {
 		return nil, fmt.Errorf("failed to read directory: %v", err)
 	}
 
+	releaseBaseURL := DOWNLOAD_MAIN_URL
+	pluginSourcePath := filepath.Join("src", filepath.Base(folderpath))
+	pluginReleaseURLDef := filepath.Join(pluginSourcePath, ".releaseurl")
+	if _, err := os.Stat(pluginReleaseURLDef); err == nil {
+		// Read the custom release URL from the file
+		data, err := os.ReadFile(pluginReleaseURLDef)
+		if err == nil {
+			releaseBaseURL = strings.TrimSpace(string(data))
+		}
+	}
+
 	for _, entry := range entries {
 		if entry.IsDir() {
 			continue
 		}
 		//filePath := filepath.Join(folderpath, entry.Name())
-		fileURL := DOWNLOAD_MAIN_URL + entry.Name() // Replace with actual URL generation logic
+		fileURL := releaseBaseURL + entry.Name() // Replace with actual URL generation logic
 		fmt.Println("Download URL for file", entry.Name(), ":", fileURL)
 		// Add the file URL to the map with the file name as the key
 		key := filepath.Base(entry.Name())
@@ -81,6 +92,12 @@ func generateDownloadURLs(folderpath string) (map[string]string, error) {
 // GeneratePluginDirInfo generates the plugin directory info for the given folder name
 func generateChecksumForDistFolder(folderpath string) (Checksums, error) {
 	checksums := Checksums{}
+	pluginSourcePath := filepath.Join("src", filepath.Base(folderpath))
+	pluginReleaseURLDef := filepath.Join(pluginSourcePath, ".releaseurl")
+	if _, err := os.Stat(pluginReleaseURLDef); err == nil {
+		// External plugin, skip checksum generation
+		return checksums, nil
+	}
 
 	entries, err := os.ReadDir(folderpath)
 	if err != nil {

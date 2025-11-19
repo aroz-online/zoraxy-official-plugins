@@ -75,3 +75,25 @@ cd tools/dirupdate/
 ```
 
 See README.md in `./tools/dirupdate/` for more information. 
+
+## Contribute Plugin
+
+To contribute a new plugin to this repository:
+
+1. Use the `add_sub_repo.sh` script to add your plugin as a submodule:
+   ```bash
+   ./add_sub_repo.sh
+   ```
+   Follow the prompts to enter your GitHub repository URL.
+
+2. If your plugin does not have a makefile, the script will offer to generate one automatically based on the makefile template. Alternatively, you can write your own makefile if preferred.
+
+3. Optionally, add your contributor information to CONTRIBUTORS.md when prompted.
+
+4. Commit,  push your changes and create a pull request.
+
+For more details, see the scripts in the repository root.
+
+## License
+
+Please refer to the LICENSE file for more information.
