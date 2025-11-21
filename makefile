@@ -11,10 +11,6 @@ all:
 	$(MAKE) dirupdate
 	@echo "All plugins built successfully."
 	
-foldertree:
-	@echo "Creating folder tree..."
-	mkdir -p directories/icon
-	touch directories/index2.json
 
 dirupdate:
 	@echo "Updating directories..."
@@ -22,4 +18,3 @@ dirupdate:
 
 clean: 
 	rm -f directories/index2.json
-	rm -rf directories/icon/

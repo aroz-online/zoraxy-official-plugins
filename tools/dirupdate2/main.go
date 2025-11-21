@@ -45,6 +45,17 @@ type IndexEntry struct {
 }
 
 func main() {
+	fmt.Println(`
+ ____  ____  ___  ___   _  ____  __   ___  __   __  ____________  ______
+ /_  / / __ \/ _ \/ _ | | |/_/\ \/ /  / _ \/ /  / / / / ___/  _/ |/ / __/
+  / /_/ /_/ / , _/ __ |_>  <   \  /  / ___/ /__/ /_/ / (_ // //    /\ \  
+ /___/\____/_/|_/_/ |_/_/|_|   /_/  /_/  /____/\____/\___/___/_/|_/___/  
+                                                                         
+ ----------------------------
+ This script updates the index2.json file based on the apps' .introspect and .releaseurl files.
+ Make sure you have internet connectivity!
+
+ `)
 	appsDir := "../../apps"
 	files, err := os.ReadDir(appsDir)
 	if err != nil {
@@ -56,6 +67,7 @@ func main() {
 
 	for _, file := range files {
 		if filepath.Ext(file.Name()) == ".json" {
+			fmt.Println("--------------------------------------------------")
 			fmt.Println("Processing", file.Name())
 			config, err := readAppConfig(filepath.Join(appsDir, file.Name()))
 			if err != nil {
@@ -72,7 +84,7 @@ func main() {
 			index = append(index, *entry)
 		}
 	}
-
+	fmt.Println("--------------------------------------------------")
 	outputFile := "../../directories/index2.json"
 	err = writeIndex(outputFile, index)
 	if err != nil {
@@ -164,15 +176,17 @@ func getRawBaseURL(repoURL string) (string, error) {
 
 	// Try main
 	mainURL := fmt.Sprintf("https://raw.githubusercontent.com/%s/%s/refs/heads/main/", user, repo)
-	fmt.Println("Trying main URL:", mainURL)
+	fmt.Println("Trying main URL:", mainURL+".introspect")
 	if checkURLExists(mainURL + ".introspect") {
+		fmt.Println("Found main URL:", mainURL+".introspect")
 		return mainURL, nil
 	}
 
 	// Try master
 	masterURL := fmt.Sprintf("https://raw.githubusercontent.com/%s/%s/refs/heads/master/", user, repo)
-	fmt.Println("Trying master URL:", masterURL)
+	fmt.Println("Trying master URL:", masterURL+".introspect")
 	if checkURLExists(masterURL + ".introspect") {
+		fmt.Println("Found master URL:", masterURL+".introspect")
 		return masterURL, nil
 	}
 
