@@ -15,6 +15,9 @@ type AppConfig struct {
 	Author           string `json:"author"`
 	Contact          string `json:"contact"`
 	MinZoraxyVersion string `json:"min_zoraxy_version"`
+	
+	// Optionally override the default artifact names used to construct download URLs
+	ArtifactNames map[string]string `json:"artifact_names,omitempty"`
 }
 
 type PluginIntrospect struct {
@@ -140,7 +143,15 @@ func processApp(config *AppConfig) (*IndexEntry, error) {
 
 	// Construct DownloadURLs
 	downloadURLs := make(map[string]string)
-	if releaseBase != "" {
+	if releaseBase != "" && len(config.ArtifactNames) > 0 {
+		// Use custom artifact names if provided
+		for arch, filename := range config.ArtifactNames {
+			if !strings.HasSuffix(releaseBase, "/") {
+				releaseBase += "/"
+			}
+			downloadURLs[arch] = releaseBase + filename
+		}
+	} else if releaseBase != "" {
 		archs := []string{"linux_amd64", "linux_386", "linux_arm", "linux_arm64", "linux_mipsle", "linux_riscv64", "windows_amd64"}
 
 		// Ensure releaseBase ends with / if not empty
