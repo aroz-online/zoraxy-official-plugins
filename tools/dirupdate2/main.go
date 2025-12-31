@@ -15,7 +15,7 @@ type AppConfig struct {
 	Author           string `json:"author"`
 	Contact          string `json:"contact"`
 	MinZoraxyVersion string `json:"min_zoraxy_version"`
-	
+
 	// Optionally override the default artifact names used to construct download URLs
 	ArtifactNames map[string]string `json:"artifact_names,omitempty"`
 }
@@ -138,7 +138,7 @@ func processApp(config *AppConfig) (*IndexEntry, error) {
 	// 3. Check icon.png
 	iconURL := rawBase + "icon.png"
 	if !checkURLExists(iconURL) {
-		iconURL = "dummy.png"
+		iconURL = "" // No icon available
 	}
 
 	// Construct DownloadURLs

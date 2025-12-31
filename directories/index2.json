@@ -1,6 +1,6 @@
 [
  {
-  "IconPath": "dummy.png",
+  "IconPath": "",
   "PluginIntroSpect": {
    "id": "com.anthonyrubick.zoraxy-blocklist-manager",
    "name": "Blocklist Import Plugin",
