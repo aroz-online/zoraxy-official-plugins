@@ -1,5 +1,48 @@
 [
  {
+  "IconPath": "dummy.png",
+  "PluginIntroSpect": {
+   "id": "com.anthonyrubick.zoraxy-blocklist-manager",
+   "name": "Blocklist Import Plugin",
+   "author": "Anthony Rubick",
+   "author_contact": "",
+   "description": "A plugin for importing blocklists into Zoraxy's Access Rules.",
+   "url": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin",
+   "type": 1,
+   "version_major": 1,
+   "version_minor": 0,
+   "version_patch": 0,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": [
+    {
+     "endpoint": "/plugin/api/blacklist/ip/add",
+     "method": "POST",
+     "reason": "Used to add IP addresses to the blocklist"
+    },
+    {
+     "endpoint": "/plugin/api/access/list",
+     "method": "GET",
+     "reason": "Used to list available access rulesets"
+    }
+   ]
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_386",
+   "linux_amd64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_amd64",
+   "linux_arm": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_arm",
+   "linux_arm64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_arm64",
+   "linux_mipsle": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_mipsle",
+   "linux_riscv64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_riscv64",
+   "windows_amd64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_windows_amd64.exe"
+  }
+ },
+ {
   "IconPath": "https://raw.githubusercontent.com/aroz-online/ztnc/refs/heads/main/icon.png",
   "PluginIntroSpect": {
    "id": "org.aroz.zoraxy.ztnc",
@@ -29,6 +72,38 @@
    "linux_mipsle": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_mipsle",
    "linux_riscv64": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_riscv64",
    "windows_amd64": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_windows_amd64.exe"
+  }
+ },
+ {
+  "IconPath": "https://raw.githubusercontent.com/kris701/zoraxyfail2ban/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "zoraxyfail2ban",
+   "name": "Fail2Ban",
+   "author": "Kristian Skov Johansen",
+   "author_contact": "kris701kj@gmail.com",
+   "description": "A plugin to interact with fail2ban in Zoraxy",
+   "url": "https://github.com/kris701/zoraxyfail2ban",
+   "type": 1,
+   "version_major": 1,
+   "version_minor": 1,
+   "version_patch": 1,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": null
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/kris701/zoraxyfail2ban/releases/latest/download/zoraxyfail2ban_linux_386",
+   "linux_amd64": "https://github.com/kris701/zoraxyfail2ban/releases/latest/download/zoraxyfail2ban_linux_amd64",
+   "linux_arm": "https://github.com/kris701/zoraxyfail2ban/releases/latest/download/zoraxyfail2ban_linux_arm",
+   "linux_arm64": "https://github.com/kris701/zoraxyfail2ban/releases/latest/download/zoraxyfail2ban_linux_arm64",
+   "linux_mipsle": "https://github.com/kris701/zoraxyfail2ban/releases/latest/download/zoraxyfail2ban_linux_mipsle",
+   "linux_riscv64": "https://github.com/kris701/zoraxyfail2ban/releases/latest/download/zoraxyfail2ban_linux_riscv64",
+   "windows_amd64": "https://github.com/kris701/zoraxyfail2ban/releases/latest/download/zoraxyfail2ban_windows_amd64.exe"
   }
  }
 ]
