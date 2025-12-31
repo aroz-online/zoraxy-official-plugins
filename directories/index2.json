@@ -1,0 +1,34 @@
+[
+ {
+  "IconPath": "https://raw.githubusercontent.com/aroz-online/ztnc/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "org.aroz.zoraxy.ztnc",
+   "name": "ztnc",
+   "author": "aroz.org",
+   "author_contact": "zoraxy.aroz.org",
+   "description": "UI for ZeroTier Network Controller",
+   "url": "https://zoraxy.aroz.org",
+   "type": 1,
+   "version_major": 2,
+   "version_minor": 0,
+   "version_patch": 0,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/ui",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": null
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_386",
+   "linux_amd64": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_amd64",
+   "linux_arm": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_arm",
+   "linux_arm64": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_arm64",
+   "linux_mipsle": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_mipsle",
+   "linux_riscv64": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_riscv64",
+   "windows_amd64": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_windows_amd64.exe"
+  }
+ }
+]

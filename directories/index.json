@@ -18,16 +18,17 @@
    "dynamic_capture_ingress": "",
    "ui_path": "/ui",
    "subscription_path": "",
-   "subscriptions_events": null
+   "subscriptions_events": null,
+   "permitted_api_endpoints": null
   },
   "ChecksumsSHA256": {
-   "linux_amd64": "74cbc05d64caefa636c32a8a37be65834a171d2e6e880d90a091022c4cad0d17",
-   "linux_386": "6b9f1d12ac8ae214ee4060893869842abdca467e6ee7a2d0a51f95ecd3d668f5",
-   "linux_arm": "832f6008f337d2b660add5ac6d510daed29dbaf5715253ea98fe3551a3ab969a",
-   "linux_arm64": "ae39e3bb7b74cb87fba8a589eb748741cfffe108901c311d887d5988ca51eab3",
-   "linux_mipsle": "2385257da56109944ced735e977efebb8caac47fee8e1570ce0c36c12e93b10d",
-   "linux_riscv64": "29c1e04563077c2eebe9593856c39f9a105bcdb3db6987cc8686248521629134",
-   "windows_amd64": "c236bae90617059724ee4d7db638bbf57639956f06a9e4b60dd6ca69f6b60277"
+   "linux_amd64": "d930347fc34620a837656e8ed5298d49049cb25119c711a52654d77c8e60ee36",
+   "linux_386": "adbd7ad3a115dd3858d739e319b72fb5ed1782939e539a9e6795ae118bee0a20",
+   "linux_arm": "aff02311a6bab9ec54bfaab21d3e97646a190d67bc094e66a30d9b5def7d68b0",
+   "linux_arm64": "bf573d6d3a6f7f31ee28820ffad529f7e51c528dfa23089b1e169aa61e60385e",
+   "linux_mipsle": "5a9ce2574805c508310bfd4fb18de3f288c938f242a317fcbaa38b3f610b696b",
+   "linux_riscv64": "f65468eb4f41cf8281ff307e4d0f659a1c6b22178c00e25d919728d2951bdb22",
+   "windows_amd64": "84812432439e7be565371ffd24b404e00ebfa7531de094218709a4fa60a9f58a"
   },
   "DownloadURLs": {
    "linux_386": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc_linux_386",
@@ -58,16 +59,17 @@
    "dynamic_capture_ingress": "",
    "ui_path": "/ui",
    "subscription_path": "",
-   "subscriptions_events": null
+   "subscriptions_events": null,
+   "permitted_api_endpoints": null
   },
   "ChecksumsSHA256": {
-   "linux_amd64": "d7c500f8da1be61fcd98d9ff71eb3a6b7de38f517921beddebccb0360bb46620",
-   "linux_386": "b71bb5615ccf53e2cfb52583c603c1a332eccfaf33e7be8a8c5832a1f22d75b0",
-   "linux_arm": "d348488424612cfa8e5aed605894391b1645446798fb15edbd2f2fc671a8b401",
-   "linux_arm64": "9e11555a031c909ab46e00dadc3f7f4172b158a8ce52bb78517022f628a20f3a",
-   "linux_mipsle": "5b5cffe5ebcc965e71498a4fab4915a028967f7c3a3d6faf3521bf9df6be27ce",
-   "linux_riscv64": "41a8705019268d545ee29deec4e4615ddc605b1dd5b902e1893ce00bf6dcd577",
-   "windows_amd64": "2a3c6c21a912f7d52c0405e5bdd178e2991c253e0b35ab3ab3e3beb2031b0be3"
+   "linux_amd64": "785e9369cc31128f8914d35bfa18b9acf59f149e32d3807570a4df78381f0867",
+   "linux_386": "cea2b6061a11dc2eb3f5ada82de1027b402925fedc0513f9b3cd91b243917312",
+   "linux_arm": "9a8eaf230947723a9099f392a17dca793b1146dc594bbc24073defea59ce4e13",
+   "linux_arm64": "5ba29c0b39ded8deb728bf3e5c828a7105d6397e01adc1c72ca5c5a53a263efc",
+   "linux_mipsle": "0318420d2d4b190630d3d277320175256695b0cf7dca22aba4e8f8afc37b16f0",
+   "linux_riscv64": "652030f813879600b261e0b6f932d16cd5d264b6444ec96e566a5fca77e38b64",
+   "windows_amd64": "8487694a2957902bedd367002deb9a7e0b223d9c58fb769d6bae376bc4f636ca"
   },
   "DownloadURLs": {
    "linux_386": "https://github.com/aroz-online/zoraxy-official-plugins/releases/latest/download/ztnc-legacy_linux_386",
