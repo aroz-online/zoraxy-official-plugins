@@ -105,5 +105,37 @@
    "linux_riscv64": "https://github.com/kris701/zoraxyfail2ban/releases/latest/download/zoraxyfail2ban_linux_riscv64",
    "windows_amd64": "https://github.com/kris701/zoraxyfail2ban/releases/latest/download/zoraxyfail2ban_windows_amd64.exe"
   }
+ },
+ {
+  "IconPath": "https://raw.githubusercontent.com/kris701/zoraxyresourcemonitor/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "zoraxyresourcemonitor",
+   "name": "Resource Monitor",
+   "author": "Kristian Skov Johansen",
+   "author_contact": "kris701kj@gmail.com",
+   "description": "A plugin to get simple resource usage of the Zoraxy host",
+   "url": "https://github.com/kris701/zoraxyresourcemonitor",
+   "type": 1,
+   "version_major": 1,
+   "version_minor": 0,
+   "version_patch": 3,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": null
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/kris701/zoraxyresourcemonitor/releases/latest/download/zoraxyresourcemonitor_linux_386",
+   "linux_amd64": "https://github.com/kris701/zoraxyresourcemonitor/releases/latest/download/zoraxyresourcemonitor_linux_amd64",
+   "linux_arm": "https://github.com/kris701/zoraxyresourcemonitor/releases/latest/download/zoraxyresourcemonitor_linux_arm",
+   "linux_arm64": "https://github.com/kris701/zoraxyresourcemonitor/releases/latest/download/zoraxyresourcemonitor_linux_arm64",
+   "linux_mipsle": "https://github.com/kris701/zoraxyresourcemonitor/releases/latest/download/zoraxyresourcemonitor_linux_mipsle",
+   "linux_riscv64": "https://github.com/kris701/zoraxyresourcemonitor/releases/latest/download/zoraxyresourcemonitor_linux_riscv64",
+   "windows_amd64": "https://github.com/kris701/zoraxyresourcemonitor/releases/latest/download/zoraxyresourcemonitor_windows_amd64.exe"
+  }
  }
 ]
