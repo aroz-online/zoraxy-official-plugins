@@ -161,6 +161,12 @@ func processApp(config *AppConfig) (*IndexEntry, error) {
 
 		for _, arch := range archs {
 			filename := introspect.ID + "_" + arch
+			if strings.Contains(introspect.ID, ".") {
+				//The introspec ID is a inverse domain name like org.aroz.zoraxy.xxxx
+				//We will trim off the domain and keeping only the application name
+				parts := strings.Split(introspect.ID, ".")
+				filename = parts[len(parts)-1] + "_" + arch
+			}
 			if strings.HasPrefix(arch, "windows") {
 				filename += ".exe"
 			}
