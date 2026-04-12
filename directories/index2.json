@@ -33,13 +33,45 @@
    ]
   },
   "DownloadURLs": {
-   "linux_386": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_386",
-   "linux_amd64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_amd64",
-   "linux_arm": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_arm",
-   "linux_arm64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_arm64",
-   "linux_mipsle": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_mipsle",
-   "linux_riscv64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_linux_riscv64",
-   "windows_amd64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/com.anthonyrubick.zoraxy-blocklist-manager_windows_amd64.exe"
+   "linux_386": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/zoraxy-blocklist-manager_linux_386",
+   "linux_amd64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/zoraxy-blocklist-manager_linux_amd64",
+   "linux_arm": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/zoraxy-blocklist-manager_linux_arm",
+   "linux_arm64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/zoraxy-blocklist-manager_linux_arm64",
+   "linux_mipsle": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/zoraxy-blocklist-manager_linux_mipsle",
+   "linux_riscv64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/zoraxy-blocklist-manager_linux_riscv64",
+   "windows_amd64": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin/releases/latest/download/zoraxy-blocklist-manager_windows_amd64.exe"
+  }
+ },
+ {
+  "IconPath": "https://raw.githubusercontent.com/aroz-online/webdav-file-manager/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "org.aroz.zoraxy.webdav-file-manager",
+   "name": "WebDAV File Manager",
+   "author": "aroz.org",
+   "author_contact": "noreply@aroz.org",
+   "description": "A WebDAV file manager for accessing Zoraxy Static Web Server",
+   "url": "https://zoraxy.aroz.org",
+   "type": 1,
+   "version_major": 1,
+   "version_minor": 0,
+   "version_patch": 1,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": null
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/aroz-online/webdav-file-manager/releases/latest/download/webdav-file-manager_linux_386",
+   "linux_amd64": "https://github.com/aroz-online/webdav-file-manager/releases/latest/download/webdav-file-manager_linux_amd64",
+   "linux_arm": "https://github.com/aroz-online/webdav-file-manager/releases/latest/download/webdav-file-manager_linux_arm",
+   "linux_arm64": "https://github.com/aroz-online/webdav-file-manager/releases/latest/download/webdav-file-manager_linux_arm64",
+   "linux_mipsle": "https://github.com/aroz-online/webdav-file-manager/releases/latest/download/webdav-file-manager_linux_mipsle",
+   "linux_riscv64": "https://github.com/aroz-online/webdav-file-manager/releases/latest/download/webdav-file-manager_linux_riscv64",
+   "windows_amd64": "https://github.com/aroz-online/webdav-file-manager/releases/latest/download/webdav-file-manager_windows_amd64.exe"
   }
  },
  {
@@ -65,13 +97,13 @@
    "permitted_api_endpoints": null
   },
   "DownloadURLs": {
-   "linux_386": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_386",
-   "linux_amd64": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_amd64",
-   "linux_arm": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_arm",
-   "linux_arm64": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_arm64",
-   "linux_mipsle": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_mipsle",
-   "linux_riscv64": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_linux_riscv64",
-   "windows_amd64": "https://github.com/aroz-online/ztnc/releases/latest/download/org.aroz.zoraxy.ztnc_windows_amd64.exe"
+   "linux_386": "https://github.com/aroz-online/ztnc/releases/latest/download/ztnc_linux_386",
+   "linux_amd64": "https://github.com/aroz-online/ztnc/releases/latest/download/ztnc_linux_amd64",
+   "linux_arm": "https://github.com/aroz-online/ztnc/releases/latest/download/ztnc_linux_arm",
+   "linux_arm64": "https://github.com/aroz-online/ztnc/releases/latest/download/ztnc_linux_arm64",
+   "linux_mipsle": "https://github.com/aroz-online/ztnc/releases/latest/download/ztnc_linux_mipsle",
+   "linux_riscv64": "https://github.com/aroz-online/ztnc/releases/latest/download/ztnc_linux_riscv64",
+   "windows_amd64": "https://github.com/aroz-online/ztnc/releases/latest/download/ztnc_windows_amd64.exe"
   }
  },
  {
@@ -85,7 +117,7 @@
    "url": "https://github.com/kris701/zoraxyfail2ban",
    "type": 1,
    "version_major": 1,
-   "version_minor": 1,
+   "version_minor": 2,
    "version_patch": 1,
    "static_capture_paths": null,
    "static_capture_ingress": "",
