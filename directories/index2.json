@@ -43,6 +43,38 @@
   }
  },
  {
+  "IconPath": "https://raw.githubusercontent.com/kianby/zoraxy-datashield-blocklist/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "fr.madyanne.zoraxy.datashield-blocklist",
+   "name": "Data-Shield Blocklist",
+   "author": "Yax",
+   "author_contact": "",
+   "description": "Blocks incoming connections from IPs listed in the Data-Shield Critical IPv4 Blocklist (~100k IPs, updated every 6h).",
+   "url": "https://github.com/kianby/zoraxy-datashield-blocklist",
+   "type": 0,
+   "version_major": 1,
+   "version_minor": 0,
+   "version_patch": 0,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "/sniff",
+   "dynamic_capture_ingress": "/block",
+   "ui_path": "/ui",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": null
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/kianby/zoraxy-datashield-blocklist/releases/latest/download/datashield-blocklist_linux_386",
+   "linux_amd64": "https://github.com/kianby/zoraxy-datashield-blocklist/releases/latest/download/datashield-blocklist_linux_amd64",
+   "linux_arm": "https://github.com/kianby/zoraxy-datashield-blocklist/releases/latest/download/datashield-blocklist_linux_arm",
+   "linux_arm64": "https://github.com/kianby/zoraxy-datashield-blocklist/releases/latest/download/datashield-blocklist_linux_arm64",
+   "linux_mipsle": "https://github.com/kianby/zoraxy-datashield-blocklist/releases/latest/download/datashield-blocklist_linux_mipsle",
+   "linux_riscv64": "https://github.com/kianby/zoraxy-datashield-blocklist/releases/latest/download/datashield-blocklist_linux_riscv64",
+   "windows_amd64": "https://github.com/kianby/zoraxy-datashield-blocklist/releases/latest/download/datashield-blocklist_windows_amd64.exe"
+  }
+ },
+ {
   "IconPath": "https://raw.githubusercontent.com/aroz-online/webdav-file-manager/refs/heads/main/icon.png",
   "PluginIntroSpect": {
    "id": "org.aroz.zoraxy.webdav-file-manager",
