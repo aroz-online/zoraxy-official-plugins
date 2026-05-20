@@ -53,7 +53,7 @@
    "url": "https://github.com/kianby/zoraxy-datashield-blocklist",
    "type": 0,
    "version_major": 1,
-   "version_minor": 0,
+   "version_minor": 3,
    "version_patch": 0,
    "static_capture_paths": null,
    "static_capture_ingress": "",
@@ -86,7 +86,7 @@
    "type": 1,
    "version_major": 1,
    "version_minor": 0,
-   "version_patch": 1,
+   "version_patch": 2,
    "static_capture_paths": null,
    "static_capture_ingress": "",
    "dynamic_capture_sniff": "",
@@ -136,6 +136,49 @@
    "linux_mipsle": "https://github.com/aroz-online/ztnc/releases/latest/download/ztnc_linux_mipsle",
    "linux_riscv64": "https://github.com/aroz-online/ztnc/releases/latest/download/ztnc_linux_riscv64",
    "windows_amd64": "https://github.com/aroz-online/ztnc/releases/latest/download/ztnc_windows_amd64.exe"
+  }
+ },
+ {
+  "IconPath": "https://raw.githubusercontent.com/reptil1990/zoraxy-prometheus-exporter/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "prometheus-exporter",
+   "name": "Prometheus Exporter",
+   "author": "reptil1990",
+   "author_contact": "reptil1990@me.com",
+   "description": "Exports Zoraxy statistical analysis data as Prometheus metrics",
+   "url": "https://github.com/reptil1990/zoraxy-prometheus-exporter",
+   "type": 1,
+   "version_major": 1,
+   "version_minor": 0,
+   "version_patch": 5,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/ui",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": [
+    {
+     "endpoint": "/plugin/api/stats/summary",
+     "method": "GET",
+     "reason": "Fetch daily request statistics for Prometheus export"
+    },
+    {
+     "endpoint": "/plugin/api/stats/netstat",
+     "method": "GET",
+     "reason": "Fetch network interface statistics for Prometheus export"
+    }
+   ]
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/reptil1990/zoraxy-prometheus-exporter/releases/latest/download/prometheus-exporter_linux_386",
+   "linux_amd64": "https://github.com/reptil1990/zoraxy-prometheus-exporter/releases/latest/download/prometheus-exporter_linux_amd64",
+   "linux_arm": "https://github.com/reptil1990/zoraxy-prometheus-exporter/releases/latest/download/prometheus-exporter_linux_arm",
+   "linux_arm64": "https://github.com/reptil1990/zoraxy-prometheus-exporter/releases/latest/download/prometheus-exporter_linux_arm64",
+   "linux_mipsle": "https://github.com/reptil1990/zoraxy-prometheus-exporter/releases/latest/download/prometheus-exporter_linux_mipsle",
+   "linux_riscv64": "https://github.com/reptil1990/zoraxy-prometheus-exporter/releases/latest/download/prometheus-exporter_linux_riscv64",
+   "windows_amd64": "https://github.com/reptil1990/zoraxy-prometheus-exporter/releases/latest/download/prometheus-exporter_windows_amd64.exe"
   }
  },
  {
