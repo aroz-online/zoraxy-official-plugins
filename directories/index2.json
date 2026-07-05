@@ -75,6 +75,38 @@
   }
  },
  {
+  "IconPath": "https://raw.githubusercontent.com/aroz-online/uptime-neko/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "org.aroz.zoraxy.uptime-neko",
+   "name": "Uptime Neko",
+   "author": "aroz.org",
+   "author_contact": "noreply@aroz.org",
+   "description": "A mini Uptime Monitor: monitor hosts, websites, ports, DNS and TLS certs with status pages and notifications.",
+   "url": "https://github.com/aroz-online/uptime-neko",
+   "type": 1,
+   "version_major": 1,
+   "version_minor": 0,
+   "version_patch": 0,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": null
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/aroz-online/uptime-neko/releases/latest/download/uptime-neko_linux_386",
+   "linux_amd64": "https://github.com/aroz-online/uptime-neko/releases/latest/download/uptime-neko_linux_amd64",
+   "linux_arm": "https://github.com/aroz-online/uptime-neko/releases/latest/download/uptime-neko_linux_arm",
+   "linux_arm64": "https://github.com/aroz-online/uptime-neko/releases/latest/download/uptime-neko_linux_arm64",
+   "linux_mipsle": "https://github.com/aroz-online/uptime-neko/releases/latest/download/uptime-neko_linux_mipsle",
+   "linux_riscv64": "https://github.com/aroz-online/uptime-neko/releases/latest/download/uptime-neko_linux_riscv64",
+   "windows_amd64": "https://github.com/aroz-online/uptime-neko/releases/latest/download/uptime-neko_windows_amd64.exe"
+  }
+ },
+ {
   "IconPath": "https://raw.githubusercontent.com/aroz-online/webdav-file-manager/refs/heads/main/icon.png",
   "PluginIntroSpect": {
    "id": "org.aroz.zoraxy.webdav-file-manager",
@@ -117,7 +149,7 @@
    "url": "https://zoraxy.aroz.org",
    "type": 1,
    "version_major": 2,
-   "version_minor": 0,
+   "version_minor": 1,
    "version_patch": 0,
    "static_capture_paths": null,
    "static_capture_ingress": "",
