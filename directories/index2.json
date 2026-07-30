@@ -43,6 +43,49 @@
   }
  },
  {
+  "IconPath": "https://raw.githubusercontent.com/sniffingsugar/zoraxy-anubis-adapter/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "com.sniffingsugar.zoraxy-anubis-adapter",
+   "name": "Anubis Bot Protection",
+   "author": "sniffingsugar",
+   "author_contact": "",
+   "description": "Forward-Auth adapter for Anubis AI crawler defense.",
+   "url": "https://github.com/sniffingsugar/zoraxy-anubis-adapter",
+   "type": 1,
+   "version_major": 1,
+   "version_minor": 0,
+   "version_patch": 0,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/ui",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": [
+    {
+     "endpoint": "/api/proxy/list",
+     "method": "GET",
+     "reason": "List proxy rules"
+    },
+    {
+     "endpoint": "/api/proxy/vdir/list",
+     "method": "GET",
+     "reason": "List vdirs"
+    }
+   ]
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/sniffingsugar/zoraxy-anubis-adapter/releases/latest/download/zoraxy-anubis-adapter_linux_386",
+   "linux_amd64": "https://github.com/sniffingsugar/zoraxy-anubis-adapter/releases/latest/download/zoraxy-anubis-adapter_linux_amd64",
+   "linux_arm": "https://github.com/sniffingsugar/zoraxy-anubis-adapter/releases/latest/download/zoraxy-anubis-adapter_linux_arm",
+   "linux_arm64": "https://github.com/sniffingsugar/zoraxy-anubis-adapter/releases/latest/download/zoraxy-anubis-adapter_linux_arm64",
+   "linux_mipsle": "https://github.com/sniffingsugar/zoraxy-anubis-adapter/releases/latest/download/zoraxy-anubis-adapter_linux_mipsle",
+   "linux_riscv64": "https://github.com/sniffingsugar/zoraxy-anubis-adapter/releases/latest/download/zoraxy-anubis-adapter_linux_riscv64",
+   "windows_amd64": "https://github.com/sniffingsugar/zoraxy-anubis-adapter/releases/latest/download/zoraxy-anubis-adapter_windows_amd64.exe"
+  }
+ },
+ {
   "IconPath": "https://raw.githubusercontent.com/kianby/zoraxy-datashield-blocklist/refs/heads/main/icon.png",
   "PluginIntroSpect": {
    "id": "fr.madyanne.zoraxy.datashield-blocklist",
