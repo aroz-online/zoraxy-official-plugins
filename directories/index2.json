@@ -96,7 +96,7 @@
    "url": "https://github.com/sniffingsugar/zoraxy-tunnel",
    "type": 1,
    "version_major": 1,
-   "version_minor": 0,
+   "version_minor": 1,
    "version_patch": 0,
    "static_capture_paths": null,
    "static_capture_ingress": "",
@@ -120,6 +120,21 @@
      "endpoint": "/api/proxy/del",
      "method": "POST",
      "reason": "Remove a service route"
+    },
+    {
+     "endpoint": "/api/acme/autoRenew/email",
+     "method": "GET",
+     "reason": "Read the ACME email configured in Zoraxy"
+    },
+    {
+     "endpoint": "/api/acme/autoRenew/ca",
+     "method": "GET",
+     "reason": "Read the user's preferred ACME CA"
+    },
+    {
+     "endpoint": "/api/acme/obtainCert",
+     "method": "GET",
+     "reason": "Issue an SSL certificate for an installed route"
     }
    ]
   },
