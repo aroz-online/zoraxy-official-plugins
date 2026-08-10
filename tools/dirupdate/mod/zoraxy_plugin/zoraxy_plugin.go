@@ -71,6 +71,7 @@ type IntroSpect struct {
 	VersionMajor  int        `json:"version_major"`  //Major version of your plugin
 	VersionMinor  int        `json:"version_minor"`  //Minor version of your plugin
 	VersionPatch  int        `json:"version_patch"`  //Patch version of your plugin
+	Preview       bool       `json:"preview,omitempty"` //Preview flag for chip in frontend
 
 	/*
 
