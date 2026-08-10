@@ -1,0 +1,36 @@
+name: Build Plugin Index
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'directories/index2.json'
+  schedule:
+    - cron: '0 4 * * *'   # daily rebuild to pick up remote plugin version bumps
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+      - name: Build index2.json
+        run: cd tools/dirupdate2 && go run .
+      - name: Commit updated index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- directories/index2.json; then
+            echo "index2.json unchanged, nothing to commit"
+          else
+            git add directories/index2.json
+            git commit -m "chore: rebuild plugin index [skip ci]"
+            git push
+          fi
