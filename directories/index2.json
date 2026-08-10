@@ -161,7 +161,6 @@
    "version_major": 0,
    "version_minor": 3,
    "version_patch": 7,
-   "preview": true,
    "static_capture_paths": null,
    "static_capture_ingress": "",
    "dynamic_capture_sniff": "",
