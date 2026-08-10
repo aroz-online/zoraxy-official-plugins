@@ -31,7 +31,6 @@ type PluginIntrospect struct {
 	VersionMajor          int         `json:"version_major"`
 	VersionMinor          int         `json:"version_minor"`
 	VersionPatch          int         `json:"version_patch"`
-	Preview      		  bool        `json:"preview,omitempty"`
 	StaticCapturePaths    interface{} `json:"static_capture_paths"`
 	StaticCaptureIngress  string      `json:"static_capture_ingress"`
 	DynamicCaptureSniff   string      `json:"dynamic_capture_sniff"`
