@@ -151,16 +151,17 @@
  {
   "IconPath": "https://raw.githubusercontent.com/reptil1990/zoraxy-dns-resolver/refs/heads/main/icon.png",
   "PluginIntroSpect": {
-   "id": "",
-   "name": "",
-   "author": "",
-   "author_contact": "",
-   "description": "",
-   "url": "",
-   "type": 0,
+   "id": "dns-resolver",
+   "name": "DNS Resolver",
+   "author": "reptil1990",
+   "author_contact": "reptil1990@me.com",
+   "description": "Split-horizon DNS resolver: answers internal hostnames locally and forwards everything else to an upstream resolver",
+   "url": "https://github.com/reptil1990/zoraxy-dns-resolver",
+   "type": 1,
    "version_major": 0,
-   "version_minor": 0,
-   "version_patch": 0,
+   "version_minor": 3,
+   "version_patch": 7,
+   "preview": true,
    "static_capture_paths": null,
    "static_capture_ingress": "",
    "dynamic_capture_sniff": "",
@@ -171,13 +172,13 @@
    "permitted_api_endpoints": null
   },
   "DownloadURLs": {
-   "linux_386": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/_linux_386",
-   "linux_amd64": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/_linux_amd64",
-   "linux_arm": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/_linux_arm",
-   "linux_arm64": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/_linux_arm64",
-   "linux_mipsle": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/_linux_mipsle",
-   "linux_riscv64": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/_linux_riscv64",
-   "windows_amd64": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/_windows_amd64.exe"
+   "linux_386": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/dns-resolver_linux_386",
+   "linux_amd64": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/dns-resolver_linux_amd64",
+   "linux_arm": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/dns-resolver_linux_arm",
+   "linux_arm64": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/dns-resolver_linux_arm64",
+   "linux_mipsle": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/dns-resolver_linux_mipsle",
+   "linux_riscv64": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/dns-resolver_linux_riscv64",
+   "windows_amd64": "https://github.com/reptil1990/zoraxy-dns-resolver/releases/latest/download/dns-resolver_windows_amd64.exe"
   }
  },
  {
