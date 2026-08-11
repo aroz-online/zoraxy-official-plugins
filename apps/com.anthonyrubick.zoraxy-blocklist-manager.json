@@ -1,6 +1,10 @@
 {
-    "repo_url": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin",
-    "author": "Anthony Rubick",
-    "contact": "https://github.com/AnthonyMichaelTDM",
-    "min_zoraxy_version": "3.3.0"
+  "repo_url": "https://github.com/AnthonyMichaelTDM/zoraxy-blocklist-import-plugin",
+  "author": "Anthony Rubick",
+  "contact": "https://github.com/AnthonyMichaelTDM",
+  "min_zoraxy_version": "3.3.0",
+  "artifact_names": {
+    "linux_x86_64": "zoraxy-blocklist-manager-x86_64-unknown-linux-musl.tar.xz",
+    "windows_x86_64": "zoraxy-blocklist-manager-x86_64-pc-windows-msvc.zip"
+  }
 }
