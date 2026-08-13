@@ -240,6 +240,59 @@
   }
  },
  {
+  "IconPath": "https://raw.githubusercontent.com/driin0/zoraxy-fqdn-whitelist-sync/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "io.github.driin0.zoraxy.fqdn_whitelist_sync",
+   "name": "FQDN Whitelist Sync",
+   "author": "driin0",
+   "author_contact": "driin0@users.noreply.github.com",
+   "description": "Keeps access-control whitelists in sync with the resolved IPs of configured FQDNs",
+   "url": "https://github.com/driin0/zoraxy-fqdn-whitelist-sync",
+   "type": 1,
+   "version_major": 1,
+   "version_minor": 1,
+   "version_patch": 2,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/ui",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": [
+    {
+     "endpoint": "/plugin/api/access/list",
+     "method": "GET",
+     "reason": "List access rules for the UI dropdown and whitelist-mode warning"
+    },
+    {
+     "endpoint": "/plugin/api/whitelist/list",
+     "method": "GET",
+     "reason": "Read the current whitelist to reconcile"
+    },
+    {
+     "endpoint": "/plugin/api/whitelist/ip/add",
+     "method": "POST",
+     "reason": "Add resolved FQDN IPs to the whitelist"
+    },
+    {
+     "endpoint": "/plugin/api/whitelist/ip/remove",
+     "method": "POST",
+     "reason": "Remove stale FQDN IPs from the whitelist"
+    }
+   ]
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/driin0/zoraxy-fqdn-whitelist-sync/releases/latest/download/fqdn_whitelist_sync_linux_386",
+   "linux_amd64": "https://github.com/driin0/zoraxy-fqdn-whitelist-sync/releases/latest/download/fqdn_whitelist_sync_linux_amd64",
+   "linux_arm": "https://github.com/driin0/zoraxy-fqdn-whitelist-sync/releases/latest/download/fqdn_whitelist_sync_linux_arm",
+   "linux_arm64": "https://github.com/driin0/zoraxy-fqdn-whitelist-sync/releases/latest/download/fqdn_whitelist_sync_linux_arm64",
+   "linux_mipsle": "https://github.com/driin0/zoraxy-fqdn-whitelist-sync/releases/latest/download/fqdn_whitelist_sync_linux_mipsle",
+   "linux_riscv64": "https://github.com/driin0/zoraxy-fqdn-whitelist-sync/releases/latest/download/fqdn_whitelist_sync_linux_riscv64",
+   "windows_amd64": "https://github.com/driin0/zoraxy-fqdn-whitelist-sync/releases/latest/download/fqdn_whitelist_sync_windows_amd64.exe"
+  }
+ },
+ {
   "IconPath": "https://raw.githubusercontent.com/aroz-online/route-debugger/refs/heads/main/icon.png",
   "PluginIntroSpect": {
    "id": "org.aroz.zoraxy.route-debugger",
