@@ -246,12 +246,12 @@
    "name": "FQDN Whitelist Sync",
    "author": "driin0",
    "author_contact": "driin0@users.noreply.github.com",
-   "description": "Keeps access-control whitelists in sync with the resolved IPs of configured FQDNs",
+   "description": "Keeps access-control whitelists in sync with resolved FQDNs and published CDN provider ranges",
    "url": "https://github.com/driin0/zoraxy-fqdn-whitelist-sync",
    "type": 1,
    "version_major": 1,
-   "version_minor": 1,
-   "version_patch": 2,
+   "version_minor": 2,
+   "version_patch": 0,
    "static_capture_paths": null,
    "static_capture_ingress": "",
    "dynamic_capture_sniff": "",
@@ -268,17 +268,17 @@
     {
      "endpoint": "/plugin/api/whitelist/list",
      "method": "GET",
-     "reason": "Read the current whitelist to reconcile"
+     "reason": "Read the current whitelist to reconcile, and to recover the last authorised addresses and ranges after a restart"
     },
     {
      "endpoint": "/plugin/api/whitelist/ip/add",
      "method": "POST",
-     "reason": "Add resolved FQDN IPs to the whitelist"
+     "reason": "Add resolved FQDN addresses and published CDN provider ranges to the whitelist"
     },
     {
      "endpoint": "/plugin/api/whitelist/ip/remove",
      "method": "POST",
-     "reason": "Remove stale FQDN IPs from the whitelist"
+     "reason": "Remove addresses and ranges that are no longer authorised, and entries left in a legacy format"
     }
    ]
   },
