@@ -70,6 +70,44 @@
   }
  },
  {
+  "IconPath": "https://raw.githubusercontent.com/fcannizzaro/zoraxy-cloudflare-tunnel/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "com.fcannizzaro.zoraxy-cloudflare-tunnel",
+   "name": "Cloudflare Tunnel",
+   "author": "Francesco Saverio Cannizzaro",
+   "author_contact": "https://github.com/fcannizzaro",
+   "description": "Zoraxy plugin to automatically create and expose a hostname via Cloudflare Tunnel",
+   "url": "https://github.com/fcannizzaro/zoraxy-cloudflare-tunnel",
+   "type": 1,
+   "version_major": 1,
+   "version_minor": 0,
+   "version_patch": 6,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": [
+    {
+     "endpoint": "/plugin/api/proxy/list",
+     "method": "GET",
+     "reason": "Suggest hostnames from configured Zoraxy HTTP proxy rules"
+    }
+   ]
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/fcannizzaro/zoraxy-cloudflare-tunnel/releases/latest/download/zoraxy-cloudflare-tunnel_linux_386",
+   "linux_amd64": "https://github.com/fcannizzaro/zoraxy-cloudflare-tunnel/releases/latest/download/zoraxy-cloudflare-tunnel_linux_amd64",
+   "linux_arm": "https://github.com/fcannizzaro/zoraxy-cloudflare-tunnel/releases/latest/download/zoraxy-cloudflare-tunnel_linux_arm",
+   "linux_arm64": "https://github.com/fcannizzaro/zoraxy-cloudflare-tunnel/releases/latest/download/zoraxy-cloudflare-tunnel_linux_arm64",
+   "linux_mipsle": "https://github.com/fcannizzaro/zoraxy-cloudflare-tunnel/releases/latest/download/zoraxy-cloudflare-tunnel_linux_mipsle",
+   "linux_riscv64": "https://github.com/fcannizzaro/zoraxy-cloudflare-tunnel/releases/latest/download/zoraxy-cloudflare-tunnel_linux_riscv64",
+   "windows_amd64": "https://github.com/fcannizzaro/zoraxy-cloudflare-tunnel/releases/latest/download/zoraxy-cloudflare-tunnel_windows_amd64.exe"
+  }
+ },
+ {
   "IconPath": "https://raw.githubusercontent.com/sniffingsugar/zoraxy-anubis-adapter/refs/heads/main/icon.png",
   "PluginIntroSpect": {
    "id": "com.sniffingsugar.zoraxy-anubis-adapter",
