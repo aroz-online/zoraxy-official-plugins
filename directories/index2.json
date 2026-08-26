@@ -470,7 +470,7 @@
    "type": 0,
    "version_major": 1,
    "version_minor": 0,
-   "version_patch": 1,
+   "version_patch": 2,
    "static_capture_paths": null,
    "static_capture_ingress": "",
    "dynamic_capture_sniff": "/path-access-sniff",
@@ -490,19 +490,9 @@
      "reason": "Lists configured HTTP proxy hosts for rule selection"
     },
     {
-     "endpoint": "/plugin/api/proxy/setTags",
-     "method": "POST",
-     "reason": "Assigns this router plugin to hosts with path access rules"
-    },
-    {
      "endpoint": "/plugin/api/plugins/groups/list",
      "method": "GET",
-     "reason": "Checks the plugin routing group"
-    },
-    {
-     "endpoint": "/plugin/api/plugins/groups/add",
-     "method": "POST",
-     "reason": "Adds this plugin to its routing group"
+     "reason": "Validates the plugin routing group before saving rules"
     }
    ]
   },
