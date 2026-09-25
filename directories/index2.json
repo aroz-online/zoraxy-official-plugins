@@ -70,6 +70,58 @@
   }
  },
  {
+  "IconPath": "https://raw.githubusercontent.com/Braedach/zoraxy-cloudflare-waf/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "com.braedach.zoraxy.cloudflarewaf",
+   "name": "Zoraxy Cloudflare WAF plugin",
+   "author": "Braedach",
+   "author_contact": "https://github.com/Braedach",
+   "description": "Detects scanners and abusive clients from Zoraxy's access log and blocks them at Cloudflare's edge (one IP List + one WAF rule), optionally also in Zoraxy's own blacklist. Blocks expire automatically. Dry-run by default.",
+   "url": "https://github.com/Braedach/zoraxy-cloudflare-waf",
+   "type": 1,
+   "version_major": 0,
+   "version_minor": 3,
+   "version_patch": 0,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/ui",
+   "subscription_path": "/events",
+   "subscriptions_events": {
+    "blacklistedIpBlocked": "Mirror an IP Zoraxy's own access-rule blacklist just blocked into the Cloudflare IP list immediately."
+   },
+   "permitted_api_endpoints": [
+    {
+     "endpoint": "/plugin/api/access/list",
+     "method": "GET",
+     "reason": "List Zoraxy's access rules so you can choose which ones blocked IPs are banned in, and warn if a rule's blacklist is off."
+    },
+    {
+     "endpoint": "/plugin/api/blacklist/ip/add",
+     "method": "POST",
+     "reason": "Ban an abusive IP in the blacklist of the access rule(s) you selected (only when 'Also ban in Zoraxy' is enabled)."
+    },
+    {
+     "endpoint": "/plugin/api/blacklist/ip/remove",
+     "method": "POST",
+     "reason": "Remove a ban this plugin added once it expires. Only IPs this plugin banned are ever removed."
+    },
+    {
+     "endpoint": "/plugin/api/blacklist/list",
+     "method": "GET",
+     "reason": "Read an access rule's IP blacklist."
+    }
+   ]
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/Braedach/zoraxy-cloudflare-waf/releases/latest/download/cloudflarewaf_linux_386",
+   "linux_amd64": "https://github.com/Braedach/zoraxy-cloudflare-waf/releases/latest/download/cloudflarewaf_linux_amd64",
+   "linux_arm": "https://github.com/Braedach/zoraxy-cloudflare-waf/releases/latest/download/cloudflarewaf_linux_arm",
+   "linux_arm64": "https://github.com/Braedach/zoraxy-cloudflare-waf/releases/latest/download/cloudflarewaf_linux_arm64"
+  }
+ },
+ {
   "IconPath": "https://raw.githubusercontent.com/fcannizzaro/zoraxy-cloudflare-tunnel/refs/heads/main/icon.png",
   "PluginIntroSpect": {
    "id": "com.fcannizzaro.zoraxy-cloudflare-tunnel",
