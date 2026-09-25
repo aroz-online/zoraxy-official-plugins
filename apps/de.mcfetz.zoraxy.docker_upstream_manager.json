@@ -1,0 +1,6 @@
+{
+  "repo_url": "https://github.com/mcfetz/zoraxy-docker-upstream-manager",
+  "author": "Daniel Heise",
+  "contact": "https://mcfetz.de",
+  "min_zoraxy_version": "3.2.0"
+}
