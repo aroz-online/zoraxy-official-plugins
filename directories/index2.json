@@ -266,6 +266,64 @@
   }
  },
  {
+  "IconPath": "https://raw.githubusercontent.com/mcfetz/zoraxy-docker-upstream-manager/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "de.mcfetz.zoraxy.docker_upstream_manager",
+   "name": "Docker Upstream Manager",
+   "author": "Daniel Heise",
+   "author_contact": "post@mcfetz.de",
+   "description": "Scans Docker hosts for published ports, applies them as upstreams of Zoraxy proxy rules, deep-links linked rules and switches all upstreams to another host in case of failure.",
+   "url": "https://github.com/mcfetz/zoraxy-docker-upstream-manager",
+   "type": 1,
+   "version_major": 0,
+   "version_minor": 1,
+   "version_patch": 0,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/ui",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": [
+    {
+     "endpoint": "/plugin/api/proxy/list",
+     "method": "GET",
+     "reason": "List proxy rules so the selected docker upstream can be applied to the endpoint being edited"
+    },
+    {
+     "endpoint": "/plugin/api/proxy/upstream/list",
+     "method": "GET",
+     "reason": "Detect which published ports are already linked to a proxy rule"
+    },
+    {
+     "endpoint": "/plugin/api/proxy/upstream/add",
+     "method": "POST",
+     "reason": "Add the selected docker container port as an upstream origin of a proxy rule"
+    },
+    {
+     "endpoint": "/plugin/api/proxy/upstream/update",
+     "method": "POST",
+     "reason": "Bulk host switch: rewrite upstream origins from one docker host to another"
+    },
+    {
+     "endpoint": "/plugin/api/proxy/upstream/remove",
+     "method": "POST",
+     "reason": "Bulk host switch: drop upstream origins pointing at a failed docker host"
+    }
+   ]
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/mcfetz/zoraxy-docker-upstream-manager/releases/latest/download/docker_upstream_manager_linux_386",
+   "linux_amd64": "https://github.com/mcfetz/zoraxy-docker-upstream-manager/releases/latest/download/docker_upstream_manager_linux_amd64",
+   "linux_arm": "https://github.com/mcfetz/zoraxy-docker-upstream-manager/releases/latest/download/docker_upstream_manager_linux_arm",
+   "linux_arm64": "https://github.com/mcfetz/zoraxy-docker-upstream-manager/releases/latest/download/docker_upstream_manager_linux_arm64",
+   "linux_mipsle": "https://github.com/mcfetz/zoraxy-docker-upstream-manager/releases/latest/download/docker_upstream_manager_linux_mipsle",
+   "linux_riscv64": "https://github.com/mcfetz/zoraxy-docker-upstream-manager/releases/latest/download/docker_upstream_manager_linux_riscv64",
+   "windows_amd64": "https://github.com/mcfetz/zoraxy-docker-upstream-manager/releases/latest/download/docker_upstream_manager_windows_amd64.exe"
+  }
+ },
+ {
   "IconPath": "https://raw.githubusercontent.com/reptil1990/zoraxy-dns-resolver/refs/heads/main/icon.png",
   "PluginIntroSpect": {
    "id": "dns-resolver",
