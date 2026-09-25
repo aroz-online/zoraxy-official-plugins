@@ -1,0 +1,12 @@
+{
+  "repo_url": "https://github.com/Braedach/zoraxy-cloudflare-waf",
+  "author": "Braedach",
+  "contact": "https://github.com/Braedach",
+  "min_zoraxy_version": "3.3.4",
+  "artifact_names": {
+    "linux_amd64": "cloudflarewaf_linux_amd64",
+    "linux_arm64": "cloudflarewaf_linux_arm64",
+    "linux_arm": "cloudflarewaf_linux_arm",
+    "linux_386": "cloudflarewaf_linux_386"
+  }
+}
