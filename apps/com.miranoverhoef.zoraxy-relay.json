@@ -2,14 +2,5 @@
   "repo_url": "https://github.com/MiranoVerhoef/Zoraxy-Relay",
   "author": "Mirano Verhoef",
   "contact": "https://github.com/MiranoVerhoef",
-  "min_zoraxy_version": "3.3.3",
-  "artifact_names": {
-    "linux_amd64": "zoraxy-relay_linux_amd64",
-    "linux_arm64": "zoraxy-relay_linux_arm64",
-    "linux_arm": "zoraxy-relay_linux_arm",
-    "darwin_amd64": "zoraxy-relay_darwin_amd64",
-    "darwin_arm64": "zoraxy-relay_darwin_arm64",
-    "windows_amd64": "zoraxy-relay_windows_amd64.exe",
-    "windows_arm64": "zoraxy-relay_windows_arm64.exe"
-  }
+  "min_zoraxy_version": "3.3.3"
 }
