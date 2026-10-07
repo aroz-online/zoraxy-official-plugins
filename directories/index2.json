@@ -81,7 +81,7 @@
    "type": 1,
    "version_major": 0,
    "version_minor": 3,
-   "version_patch": 0,
+   "version_patch": 1,
    "static_capture_paths": null,
    "static_capture_ingress": "",
    "dynamic_capture_sniff": "",
