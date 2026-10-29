@@ -350,6 +350,44 @@
   }
  },
  {
+  "IconPath": "https://raw.githubusercontent.com/denMaier/zoraxy-home/refs/heads/main/icon.png",
+  "PluginIntroSpect": {
+   "id": "io.github.denmaier.zoraxy.home",
+   "name": "Home",
+   "author": "Denis Maier",
+   "author_contact": "https://github.com/denMaier",
+   "description": "Turns your active HTTP proxy rules into a phone-style homepage with OIDC sign-in (Pocket ID, Authentik, Keycloak, …), per-user layouts, folders and themes",
+   "url": "https://github.com/denMaier/zoraxy-home",
+   "type": 1,
+   "version_major": 0,
+   "version_minor": 2,
+   "version_patch": 1,
+   "static_capture_paths": null,
+   "static_capture_ingress": "",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/ui",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": [
+    {
+     "endpoint": "/plugin/api/proxy/list",
+     "method": "GET",
+     "reason": "Reads the HTTP proxy rules that are shown as apps on the homepage"
+    }
+   ]
+  },
+  "DownloadURLs": {
+   "linux_386": "https://github.com/denMaier/zoraxy-home/releases/latest/download/home_linux_386",
+   "linux_amd64": "https://github.com/denMaier/zoraxy-home/releases/latest/download/home_linux_amd64",
+   "linux_arm": "https://github.com/denMaier/zoraxy-home/releases/latest/download/home_linux_arm",
+   "linux_arm64": "https://github.com/denMaier/zoraxy-home/releases/latest/download/home_linux_arm64",
+   "linux_mipsle": "https://github.com/denMaier/zoraxy-home/releases/latest/download/home_linux_mipsle",
+   "linux_riscv64": "https://github.com/denMaier/zoraxy-home/releases/latest/download/home_linux_riscv64",
+   "windows_amd64": "https://github.com/denMaier/zoraxy-home/releases/latest/download/home_windows_amd64.exe"
+  }
+ },
+ {
   "IconPath": "https://raw.githubusercontent.com/driin0/zoraxy-fqdn-whitelist-sync/refs/heads/main/icon.png",
   "PluginIntroSpect": {
    "id": "io.github.driin0.zoraxy.fqdn_whitelist_sync",
