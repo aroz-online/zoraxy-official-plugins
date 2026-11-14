@@ -569,7 +569,7 @@
   }
  },
  {
-  "IconPath": "",
+  "IconPath": "https://raw.githubusercontent.com/fdefilippo/zoraxy-method-filter/refs/heads/main/icon.png",
   "PluginIntroSpect": {
    "id": "org.defilippo.zoraxy.methodfilter",
    "name": "HTTP Method Filter",
