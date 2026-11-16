@@ -1,5 +1,57 @@
 [
  {
+  "IconPath": "https://raw.githubusercontent.com/nexus421/zoraxy-dyndns/refs/heads/master/icon.png",
+  "PluginIntroSpect": {
+   "id": "bayern.kickner.zoraxy.dyndns",
+   "name": "DynDNS Whitelist",
+   "author": "nexus421",
+   "author_contact": "https://github.com/nexus421",
+   "description": "Turns Zoraxy into a DynDNS (dyndns2) endpoint: a router such as a FRITZ!Box pushes its current IP and the plugin keeps it in the whitelist of the configured access rules.",
+   "url": "https://github.com/nexus421/zoraxy-dyndns",
+   "type": 0,
+   "version_major": 1,
+   "version_minor": 0,
+   "version_patch": 0,
+   "static_capture_paths": [
+    {
+     "capture_path": "/nic/update"
+    }
+   ],
+   "static_capture_ingress": "/s_capture",
+   "dynamic_capture_sniff": "",
+   "dynamic_capture_ingress": "",
+   "ui_path": "/ui/",
+   "subscription_path": "",
+   "subscriptions_events": null,
+   "permitted_api_endpoints": [
+    {
+     "endpoint": "/plugin/api/access/list",
+     "method": "GET",
+     "reason": "Read access rules: whitelist entries, switch state and bypass settings"
+    },
+    {
+     "endpoint": "/plugin/api/whitelist/ip/add",
+     "method": "POST",
+     "reason": "Whitelist the address reported by a DynDNS client or a static entry"
+    },
+    {
+     "endpoint": "/plugin/api/whitelist/ip/remove",
+     "method": "POST",
+     "reason": "Remove addresses that are no longer reported or configured"
+    },
+    {
+     "endpoint": "/plugin/api/whitelist/enable",
+     "method": "POST",
+     "reason": "Keep the whitelist switch as configured (modes enforce and open_when_empty)"
+    }
+   ]
+  },
+  "DownloadURLs": {
+   "linux_amd64": "https://github.com/nexus421/zoraxy-dyndns/releases/latest/download/dyndns_linux_amd64",
+   "linux_arm64": "https://github.com/nexus421/zoraxy-dyndns/releases/latest/download/dyndns_linux_arm64"
+  }
+ },
+ {
   "IconPath": "",
   "PluginIntroSpect": {
    "id": "com.anthonyrubick.zoraxy-blocklist-manager",
