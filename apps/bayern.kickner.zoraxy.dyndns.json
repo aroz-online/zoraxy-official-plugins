@@ -1,0 +1,10 @@
+{
+  "repo_url": "https://github.com/nexus421/zoraxy-dyndns",
+  "author": "nexus421",
+  "contact": "https://github.com/nexus421",
+  "min_zoraxy_version": "3.3.3",
+  "artifact_names": {
+    "linux_amd64": "dyndns_linux_amd64",
+    "linux_arm64": "dyndns_linux_arm64"
+  }
+}
