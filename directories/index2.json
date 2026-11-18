@@ -11,7 +11,7 @@
    "type": 0,
    "version_major": 1,
    "version_minor": 0,
-   "version_patch": 0,
+   "version_patch": 1,
    "static_capture_paths": [
     {
      "capture_path": "/nic/update"
